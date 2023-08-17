@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+.container-fluid {
+    width: 100%;
+}
 /* utilities */
 .row {
     display: flex;
@@ -23,6 +26,24 @@
 .gap-3 {
     gap: 10px;
 }
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.px-3 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+  }
 
 .header {
     padding: 10px 12px;
@@ -37,45 +58,46 @@
 .logo img{
     width: 100px;
 }
-.search-bar {
+.input-group {
     position: relative;
 }
 
 .search-input {
     width: 450px;
-    border-radius: 30px;
+    height: 20px;
+    border-radius: 25px;
     outline: none;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #ddd;
     
 }
 
-.search-button {
+.search-btn {
     position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    border-left: 1px solid #ddd;
+    background: #f8f8f8;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px ;
   }
-  .search-button i {
+  .search-btn i {
     font-size: 18px;
   }
  
+  
 .btn-circle {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: none;
+    background-color: #eee;
     font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .btn-circle:hover {
-    background-color: #ddd;
+    background-color: #ddd !important;
 }

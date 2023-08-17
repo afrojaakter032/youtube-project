@@ -8,7 +8,8 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header px-3">
+        <div class="container-fluid">
         <div class="row justify-content-between">
             <div class="col">
                 <div class="d-flex align-item-center gap-3">
@@ -22,31 +23,35 @@
             </div>
             <div class="col">
                 <div class="d-flex align-item-center gap-3">
-                    <div class="search-bar">
+                    <div class="input-group">
                         <input type="text" class="search-input" id="search" placeholder="Search">
-                        <button class="search-button"><i class="ph ph-magnifying-glass"></i></button>
+                        <button class=" btn search-btn">
+                            <i class="ph ph-magnifying-glass"></i>
+                        </button>
                     </div>
                     <div>
-                    <button class="btn-circle">
+                    <button class=" btn btn-circle" title="voice">
                         <i class="ph ph-microphone"></i>
                     </button>
                    </div>
                 </div>
-            </div>   
+            </div>
             <div class="col">
                 <div class="d-flex align-item-center gap-3">
-                    <button class="btn-circle">
-                        <i class="ph ph-video-camera"></i>
+                    <button class=" btn btn-circle bg-transparent" title="vedio">
+                        <i class=" btn ph ph-video-camera"></i>
                     </button>
-                    <button class="btn-circle">
+                    <button class=" btn btn-circle bg-transparent" title="notification">
                         <i class="ph ph-bell"></i>
                     </button>
-                    <button class="btn-circle">
+                    <button class=" btn btn-circle bg-transparent" title="user">
                         <i class="ph ph-user"></i>
                     </button>
                 </div>
             </div>
         </div>
+    </div>
+
     </header>
     <main>
 
@@ -54,6 +59,5 @@
     <footer>
 
     </footer>
-    
 </body>
 </html>
