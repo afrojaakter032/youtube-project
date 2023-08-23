@@ -69,9 +69,25 @@ body {
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
+.p-5 {
+    padding: 25px !important;
+}
 
 .mt-5 {
     margin-top: 25px !important;
+
+}
+
+.my-5 {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+}
+.rounded {
+    border-radius: 15px;
+
+}
+.border {
+    border: 1px solid #eee;
 
 }
 .overflow-x-scroll {
@@ -232,6 +248,7 @@ body {
 
 .footer {
     padding-left: 250px;
+    font-size: 14px;
 }
 
 .footer-menu {
@@ -252,4 +269,8 @@ body {
     color: #000;
     text-decoration: none;
 
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
 }
