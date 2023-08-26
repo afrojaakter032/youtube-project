@@ -26,6 +26,14 @@ body {
     display: flex;
 }
 
+.d-grid {
+    display: grid;
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .flex-wrap {
     flex-wrap: wrap;
 }
@@ -70,9 +78,19 @@ body {
     padding-right: 15px !important;
 }
 
+.py-3 {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
 .mt-5 {
     margin-top: 25px !important;
 
+}
+
+.my-5 {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
 }
 
 .overflow-y-scroll {
@@ -218,8 +236,11 @@ body {
 
 .categories-section {
     position: fixed;
-    /* width: 100%; */
-    width: calc(100% - 15px);
+    left: calc(250px + 15px);
+    top: 75px;
+    right: 15px;
+    z-index: 2;
+    background: #fff;
 
 
 }
@@ -228,7 +249,7 @@ body {
     padding-top: 50px;
 }
 .card {
-    width: calc(25% - 15px);
+    width: 100%;
 
 }
 
