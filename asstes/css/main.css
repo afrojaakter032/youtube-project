@@ -77,6 +77,9 @@ body {
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
+.p-5 {
+    padding: 25px !important;
+}
 
 .py-3 {
     padding-top: 15px !important;
@@ -92,7 +95,14 @@ body {
     margin-top: 25px !important;
     margin-bottom: 25px !important;
 }
+.rounded {
+    border-radius: 15px;
 
+}
+.border {
+    border: 1px solid #eee;
+
+}
 .overflow-y-scroll {
     overflow-y: auto;
 }
@@ -279,6 +289,7 @@ body {
 
 .footer {
     padding-left: 250px;
+    font-size: 14px;
 }
 
 .footer-menu {
@@ -299,4 +310,8 @@ body {
     color: #000;
     text-decoration: none;
 
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
 }
