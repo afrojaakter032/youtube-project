@@ -211,10 +211,7 @@ body {
 /* dropdown responsive */
 
 @media screen and (max-width: 400px) {
-    .dropdown-content {
-        display: inline-block;
-
-    }
+    
 }
 /* menu */
 .menu-open-btn .menu-close-btn {
