@@ -51,14 +51,23 @@
                         </button>
                     </div>
                     <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn btn btn-circle bg-transparent">
+                        <button class="dropbtn btn btn-circle bg-transparent dropdown-toggle">
                             <i class="ph ph-user"></i>
                         </button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="#">Item 1</a>
-                            <a href="#">Item 2</a>
-                            <a href="#">Item 3</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">Log in</a>
+                                <li class="dropdown-item">
+                                    <a class="dropdown-link" href="#">Register</a>
+                                </li>
+                                <li class="dropdown-item d-none d-xs-block">
+                                    <a class="dropdown-link" href="#">Vedio creator</a>
+                                </li>
+                                <li class="dropdown-item d-none d-xs-block">
+                                    <a class="dropdown-link" href="#">Notification</a>
+                                </li>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
