@@ -40,14 +40,21 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 992px) {
+    .d-lg-block {
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
     .d-xs-none {
         display: none;
 
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .d-xs-block {
         display: block;
     }
@@ -259,9 +266,23 @@ body {
     background-color: #ccc;
 
   }
+  .search-bar.show {
+    display: block;
+    position: fixed;
+    z-index: 5;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+}
+
+.search-bar.show .search-input {
+    width: 60vw;
+}
 .btn-circle {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     background-color: #eee;
     font-size: 24px;

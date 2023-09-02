@@ -23,12 +23,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col d-lg-none">
+            <div class="col d-lg-none search-bar">
                 <div class="d-flex align-item-center gap-3">
                     <div class="input-group">
                         <input type="text" class="search-input" id="search" placeholder="Search">
                         <button class=" btn search-btn">
                             <i class="ph ph-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <button class="btn btn-circle" title="Close" onclick="document.querySelector('.search-bar').classList.remove('show')">
+                            <i class="ph ph-x"></i>
                         </button>
                     </div>
                     <div>
@@ -40,6 +45,11 @@
             </div>
             <div class="col">
                 <div class="d-flex align-item-center gap-3">
+                    <div class="d-none d-lg-block ">
+                        <button class=" btn btn-circle bg-transparent" title="search"  onclick="document.querySelector('.search-bar').classList.add('show')">
+                            <i class=" btn ph-magnifying-glass"></i>
+                        </button>
+                    </div>
                    <div class="d-xs-none">
                     <button class=" btn btn-circle bg-transparent" title="vedio">
                         <i class=" btn ph ph-video-camera"></i>
