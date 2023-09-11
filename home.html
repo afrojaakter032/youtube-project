@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./asstes/css/main.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -14,7 +15,7 @@
         <div class="container-fluid">
         <div class="row justify-content-between px-3">
             <div class="col">
-                <div class="d-flex align-item-center gap-3">
+                <div class="d-flex align-items-center gap-3">
                     <div class="menu-open-btn">
                         <i class="ph ph-list"></i>
                     </div>
@@ -23,15 +24,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col d-lg-none search-bar">
-                <div class="d-flex align-item-center gap-3">
-                    <div class="input-group">
+            <div class="col search-bar d-none d-lg-block">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <div class="search-input-group">
                         <input type="text" class="search-input" id="search" placeholder="Search">
                         <button class=" btn search-btn">
                             <i class="ph ph-magnifying-glass"></i>
                         </button>
                     </div>
-                    <div class="d-none d-lg-block">
+                    <div class="d-block d-lg-none">
                         <button class="btn btn-circle" title="Close" onclick="document.querySelector('.search-bar').classList.remove('show')">
                             <i class="ph ph-x"></i>
                         </button>
@@ -44,24 +45,24 @@
                 </div>
             </div>
             <div class="col">
-                <div class="d-flex align-item-center gap-3">
-                    <div class="d-none d-lg-block ">
+                <div class="d-flex align-item-center justify-content-end gap-3">
+                    <div class="d-block d-lg-none ">
                         <button class=" btn btn-circle bg-transparent" title="search"  onclick="document.querySelector('.search-bar').classList.add('show')">
                             <i class=" btn ph ph-magnifying-glass"></i>
                         </button>
                     </div>
-                   <div class="d-xs-none">
+                   <div class="d-none d-sm-block">
                     <button class=" btn btn-circle bg-transparent" title="vedio">
                         <i class=" btn ph ph-video-camera"></i>
                     </button>
                    </div>
-                    <div class="d-xs-none">
+                    <div class="d-none d-sm-block">
                         <button class=" btn btn-circle bg-transparent" title="notification">
                             <i class="ph ph-bell"></i>
                         </button>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn btn btn-circle bg-transparent dropdown-toggle">
+                        <button class="dropbtn btn btn-circle bg-transparent">
                             <i class="ph ph-user"></i>
                         </button>
                         <ul class="dropdown-menu">
@@ -70,10 +71,10 @@
                                 <li class="dropdown-item">
                                     <a class="dropdown-link" href="#">Register</a>
                                 </li>
-                                <li class="dropdown-item d-none d-xs-block">
+                                <li class="dropdown-item d-block d-sm-none">
                                     <a class="dropdown-link" href="#">Vedio creator</a>
                                 </li>
-                                <li class="dropdown-item d-none d-xs-block">
+                                <li class="dropdown-item d-block d-sm-none">
                                     <a class="dropdown-link" href="#">Notification</a>
                                 </li>
                             </li>
@@ -260,168 +261,184 @@
         <!-- category section ends here -->
         <!-- vedio section start from here -->
         <section class="vedio-section px-3 mt-5">
-            <div class="d-grid grid-cols-4  grid-cols-xl-3 grid-cols-lg-2 grid-cols-sm-1 gap-3">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./asstes/images/vedios/card1.jpg" alt="image">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asstes/images/vedios/card1.jpg" alt="image">
+
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="card-user-logo">
+                                <img src="./asstes/images/user2.png" alt="user">
+                            </div>
+                            <div>
+                                <div class="card-title">Black Adam-Official trailer</div>
+                                <div class="card-sub-title">The world needed a hero.</div>
+                                <div class="card-meta">31M . 1 month ago</div>
+                            </div>
+
+                        </div>
 
                     </div>
-                    <div class="d-flex gap-3">
-                        <div class="card-user-logo">
-                            <img src="./asstes/images/user2.png" alt="user">
+                </div>
+                <div class="col-md-3">   
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asstes/images/vedios/card1.jpg" alt="image">
+
                         </div>
-                        <div>
-                            <div class="card-title">Black Adam-Official trailer</div>
-                            <div class="card-sub-title">The world needed a hero.</div>
-                            <div class="card-meta">31M . 1 month ago</div>
+                        <div class="d-flex gap-3">
+                            <div class="card-user-logo">
+                                <img src="./asstes/images/user2.png" alt="user">
+
+
+                            </div>
+                            <div>
+                                <div class="card-title">Black Adam-Official trailer</div>
+                                <div class="card-sub-title">The world needed a hero.</div>
+                                <div class="card-meta">31M . 1 month ago</div>
+                            </div>
+
                         </div>
 
                     </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asstes/images/vedios/card1.jpg" alt="image">
+
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="card-user-logo">
+                                <img src="./asstes/images/user2.png" alt="user">
+
+
+                            </div>
+                            <div>
+                                <div class="card-title">Black Adam-Official trailer</div>
+                                <div class="card-sub-title">The world needed a hero.</div>
+                                <div class="card-meta">31M . 1 month ago</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div> 
+                <div class="col-md-3">  
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asstes/images/vedios/card1.jpg" alt="image">
+
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="card-user-logo">
+                                <img src="./asstes/images/user2.png" alt="user">
+
+
+                            </div>
+                            <div>
+                                <div class="card-title">Black Adam-Official trailer</div>
+                                <div class="card-sub-title">The world needed a hero.</div>
+                                <div class="card-meta">31M . 1 month ago</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">     
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asstes/images/vedios/card1.jpg" alt="image">
+
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="card-user-logo">
+                                <img src="./asstes/images/user2.png" alt="user">
+
+
+                            </div>
+                            <div>
+                                <div class="card-title">Black Adam-Official trailer</div>
+                                <div class="card-sub-title">The world needed a hero.</div>
+                                <div class="card-meta">31M . 1 month ago</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div> 
+                <div class="col-md-3">   
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asstes/images/vedios/card1.jpg" alt="image">
+
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="card-user-logo">
+                                <img src="./asstes/images/user2.png" alt="user">
+
+
+                            </div>
+                            <div>
+                                <div class="card-title">Black Adam-Official trailer</div>
+                                <div class="card-sub-title">The world needed a hero.</div>
+                                <div class="card-meta">31M . 1 month ago</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asstes/images/vedios/card1.jpg" alt="image">
+
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="card-user-logo">
+                                <img src="./asstes/images/user2.png" alt="user">
+
+
+                            </div>
+                            <div>
+                                <div class="card-title">Black Adam-Official trailer</div>
+                                <div class="card-sub-title">The world needed a hero.</div>
+                                <div class="card-meta">31M . 1 month ago</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./asstes/images/vedios/card1.jpg" alt="image">
+
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="card-user-logo">
+                                <img src="./asstes/images/user2.png" alt="user">
+
+
+                            </div>
+                            <div>
+                                <div class="card-title">Black Adam-Official trailer</div>
+                                <div class="card-sub-title">The world needed a hero.</div>
+                                <div class="card-meta">31M . 1 month ago</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>    
+
 
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./asstes/images/vedios/card1.jpg" alt="image">
-
-                    </div>
-                    <div class="d-flex gap-3">
-                        <div class="card-user-logo">
-                            <img src="./asstes/images/user2.png" alt="user">
-
-
-                        </div>
-                        <div>
-                            <div class="card-title">Black Adam-Official trailer</div>
-                            <div class="card-sub-title">The world needed a hero.</div>
-                            <div class="card-meta">31M . 1 month ago</div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./asstes/images/vedios/card1.jpg" alt="image">
-
-                    </div>
-                    <div class="d-flex gap-3">
-                        <div class="card-user-logo">
-                            <img src="./asstes/images/user2.png" alt="user">
-
-
-                        </div>
-                        <div>
-                            <div class="card-title">Black Adam-Official trailer</div>
-                            <div class="card-sub-title">The world needed a hero.</div>
-                            <div class="card-meta">31M . 1 month ago</div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./asstes/images/vedios/card1.jpg" alt="image">
-
-                    </div>
-                    <div class="d-flex gap-3">
-                        <div class="card-user-logo">
-                            <img src="./asstes/images/user2.png" alt="user">
-
-
-                        </div>
-                        <div>
-                            <div class="card-title">Black Adam-Official trailer</div>
-                            <div class="card-sub-title">The world needed a hero.</div>
-                            <div class="card-meta">31M . 1 month ago</div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./asstes/images/vedios/card1.jpg" alt="image">
-
-                    </div>
-                    <div class="d-flex gap-3">
-                        <div class="card-user-logo">
-                            <img src="./asstes/images/user2.png" alt="user">
-
-
-                        </div>
-                        <div>
-                            <div class="card-title">Black Adam-Official trailer</div>
-                            <div class="card-sub-title">The world needed a hero.</div>
-                            <div class="card-meta">31M . 1 month ago</div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./asstes/images/vedios/card1.jpg" alt="image">
-
-                    </div>
-                    <div class="d-flex gap-3">
-                        <div class="card-user-logo">
-                            <img src="./asstes/images/user2.png" alt="user">
-
-
-                        </div>
-                        <div>
-                            <div class="card-title">Black Adam-Official trailer</div>
-                            <div class="card-sub-title">The world needed a hero.</div>
-                            <div class="card-meta">31M . 1 month ago</div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./asstes/images/vedios/card1.jpg" alt="image">
-
-                    </div>
-                    <div class="d-flex gap-3">
-                        <div class="card-user-logo">
-                            <img src="./asstes/images/user2.png" alt="user">
-
-
-                        </div>
-                        <div>
-                            <div class="card-title">Black Adam-Official trailer</div>
-                            <div class="card-sub-title">The world needed a hero.</div>
-                            <div class="card-meta">31M . 1 month ago</div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./asstes/images/vedios/card1.jpg" alt="image">
-
-                    </div>
-                    <div class="d-flex gap-3">
-                        <div class="card-user-logo">
-                            <img src="./asstes/images/user2.png" alt="user">
-
-
-                        </div>
-                        <div>
-                            <div class="card-title">Black Adam-Official trailer</div>
-                            <div class="card-sub-title">The world needed a hero.</div>
-                            <div class="card-meta">31M . 1 month ago</div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
 
         </section>
 
@@ -430,29 +447,30 @@
     </main>
     <footer class="footer">
         <div class="px-3 my-5">
-            <div class=" d-flex flex-wrap footer-card justify-content-between p-5 rounded border">
-                <div class="footer-menu">
-                    <ul>
-                        <li>
-                            <a href="#">About</a>
+            <div class=" row py-5 px-3 g-3 rounded border">
+                <div class="col-xl-7">
+                    <ul class="nav footer-menu justify-content-center justify-content-xl-start">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark py-0">About</a>
                         </li>
-                        <li>
-                            <a href="#">Terms and Conditions</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark py-0">Terms and Conditions</a>
                         </li>
-                        <li>
-                            <a href="#">Privicy Policy</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark py-0">Privicy Policy</a>
                         </li>
-                        <li>
-                            <a href="#">COntact</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark py-0">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="col-xl-5 text-center text-xl-end" >
                     copyright &copy; 2023 <a href="#">youtube-clone.com.</a>All rights reserved
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="./asstes/js/main.js "></script>
 </body>
 </html>
