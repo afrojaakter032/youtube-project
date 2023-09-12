@@ -123,6 +123,7 @@ body {
     right: 1px;
     bottom: 1px;
     border-left: 1px solid var(--primary);
+    border-radius: 0px;
     background: #f8f8f8;
     padding: 10px 25px;
     font-size: 20px;
@@ -177,6 +178,8 @@ body {
     overflow: hidden;
     width: 180px;
     display: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .dropdown-menu .dropdown-item,
